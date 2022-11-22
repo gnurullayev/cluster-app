@@ -1,0 +1,19 @@
+.report {
+    padding: 100px 0;
+}
+
+.report_header {
+    margin-bottom: 40px;
+}
+
+.report_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.report_body {
+    width: 100%;
+    border: 1px solid rgba(218, 218, 218, 0.2);
+    border-radius: 16px;
+}
