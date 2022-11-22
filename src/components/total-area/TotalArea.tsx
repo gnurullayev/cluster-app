@@ -2,6 +2,9 @@ import React from 'react'
 import styles from "./totalArea.module.css"
 import line from "../../assets/line.svg"
 import CircleProgress from '../circle-pogress/CircleProgress'
+import { progresBarData } from '../../data/totalAreaProgresBarData'
+import TotalAreaListItem from '../total-area-list-item/TotalAreaListItem'
+import { totalAreaListData } from '../../data/totalAreaListData'
 
 const TotalArea = () => {
   return (
@@ -20,39 +23,19 @@ const TotalArea = () => {
 
         <div className={styles.box}>
           <div className={styles.box_circle}>
-            <CircleProgress classNames={"progress1"} color={"#6D96FF"} count={90}/>
-            <CircleProgress classNames={"progress2"} color={"#4295F7"} count={60}/>
-            <CircleProgress classNames={"progress3"} color={"#42CCF7"} count={50}/>
-            <CircleProgress classNames={"progress4"} color={"#42F7A0"} count={30}/>
-            <CircleProgress classNames={"progress5"} color={"#FFC701"} count={35}/>
-            <CircleProgress classNames={"progress6"} color={"#F77842"} count={40}/>
-            <CircleProgress classNames={"progress7"} color={"#F74242"} count={30}/>
-            <CircleProgress classNames={"progress8"} color={"#F74299"} count={50}/>
-            <CircleProgress classNames={"progress9"} color={"#DE42F7"} count={80}/>
-            <CircleProgress classNames={"progress10"} color={"#8742F7"} count={70}/>
+            {
+              progresBarData.map(el => (
+                <CircleProgress key = {el.classNames} classNames={el.classNames} color={el.color} count={el.count}/>
+              ))
+            }
           </div>
 
           <ul className={styles.list}>
-            <li className={styles.list_item}>
-              Площадь орошаемых земель
-              <strong className={styles.list_item_strong}>30 205,4</strong>
-            </li>
-
-            <li className={styles.list_item}>
-              Площадь орошаемых земель
-              <strong className={styles.list_item_strong}>30 205,4</strong>
-            </li>
-
-            <li className={styles.list_item}>
-              Площадь орошаемых земель
-              <strong className={styles.list_item_strong}>30 205,4</strong>
-            </li>
-
-            <li className={styles.list_item}>
-              Площадь орошаемых земель
-              <strong className={styles.list_item_strong}>30 205,4</strong>
-            </li>
-            
+            {
+              totalAreaListData.map(el => (
+                <TotalAreaListItem key = {el.id} text={el.text} counts={el.count}/>
+              ))
+            }
           </ul>
         </div>
       </div>

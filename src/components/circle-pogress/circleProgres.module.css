@@ -14,7 +14,7 @@
   .progress::before {
     content: "";
     border-radius: 50%;
-    background: linear-gradient(273.84deg, #4079ff 99.41%, #4079ff 99.41%);
+    background: linear-gradient(273.84deg, #2f6aff 99.41%, #4079ff 99.41%);
   }
   
   .progress1 {

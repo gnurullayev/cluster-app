@@ -1,0 +1,79 @@
+
+.list_item {
+    position: relative;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.list_item + .list_item {
+    margin-top: 28px;
+}
+
+.list_item::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    content: "";
+    box-sizing: border-box;
+}
+
+.list_item:nth-child(1)::before {
+    border: 6px solid #6D96FF;
+}
+
+.list_item:nth-child(2)::before {
+    border: 6px solid #4295F7;
+}
+
+.list_item:nth-child(3)::before {
+    border: 6px solid #42CCF7;
+}
+
+.list_item:nth-child(4)::before {
+    border: 6px solid #42F7A0;
+}
+
+.list_item:nth-child(5)::before {
+    border: 6px solid #FFC701;
+}
+
+.list_item:nth-child(6)::before {
+    border: 6px solid #F77842;
+}
+
+.list_item:nth-child(7)::before {
+    top: 10px;
+    border: 6px solid #F74242;
+}
+
+.list_item:nth-child(8)::before {
+    border: 6px solid #F74299;
+}
+
+.list_item:nth-child(9)::before {
+    border: 6px solid #DE42F7;
+}
+
+.list_item:nth-child(10)::before {
+    border: 6px solid #8742F7;
+}
+
+.list_item_span {
+    display: inline-block;
+    width: 100%;
+    max-width: 252px;
+}
+
+.list_item_strong{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+

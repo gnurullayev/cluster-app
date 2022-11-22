@@ -13,6 +13,7 @@
 .box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box_circle {
@@ -22,5 +23,10 @@
     height: 596px;
     padding-left: 20px;
     transform: rotate(15deg);
-    border: 1px solid red;
+}
+
+.list {
+    width: 100%;
+    max-width: 410px;
+    padding-top: 30px;
 }
