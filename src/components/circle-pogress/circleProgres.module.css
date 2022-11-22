@@ -1,0 +1,128 @@
+
+  
+  .progress {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+  
+  
+  .progress::before {
+    content: "";
+    border-radius: 50%;
+    background: linear-gradient(273.84deg, #4079ff 99.41%, #4079ff 99.41%);
+  }
+  
+  .progress1 {
+    width: 596px;
+    height:596px;
+    z-index: 1;
+  }
+  
+  .progress1::before {
+    width: 564px;
+    height: 564px;
+  }
+  
+  .progress2 {
+    width: 533px;
+    height:533px;
+    z-index: 2;
+  }
+  
+  .progress2::before {
+    width: 509px;
+    height: 509px;
+  }
+  
+  .progress3 {
+    width: 473px;
+    height: 473px;
+    z-index: 3;
+  }
+  
+  .progress3::before {
+    width: 449px;
+    height: 449px;
+  }
+  
+  .progress4 {
+    width: 411px;
+    height: 411px;
+    z-index: 4;
+  }
+  
+  .progress4::before {
+    width: 387px;
+    height: 387px;
+  }
+  
+  .progress5 {
+    width: 351px;
+    height: 351px;
+    z-index: 5;
+  }
+  
+  .progress5::before {
+    width: 327px;
+    height: 327px;
+  }
+  
+  .progress6 {
+    width: 290px;
+    height: 290px;
+    z-index: 6;
+  }
+  
+  .progress6::before {
+    width: 266px;
+    height: 266px;
+  }
+  
+  .progress7 {
+    width: 230px;
+    height: 230px;
+    z-index: 7;
+  }
+  
+  .progress7::before {
+    width: 206px;
+    height: 206px;
+  }
+  
+  .progress8 {
+    width: 169px;
+    height: 169px;
+    z-index: 8;
+  }
+  
+  .progress8::before {
+    width: 142px;
+    height: 142px;
+  }
+  
+  .progress9 {
+    width: 109px;
+    height: 109px;
+    z-index: 9;
+  }
+  
+  .progress9::before {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .progress10 {
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+  }
+  
+  .progress10::before {
+    width: 24px;
+    height: 24px;
+  }

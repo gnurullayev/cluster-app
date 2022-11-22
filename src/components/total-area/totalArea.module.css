@@ -1,0 +1,26 @@
+.total_aria {
+    padding: 100px 0;
+}
+
+.total_aria_inner {
+    overflow: hidden;
+}
+
+.title_span {
+    padding-left: 32px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_circle {
+    position: relative;
+    width: 100%;
+    max-width: 616px;
+    height: 596px;
+    padding-left: 20px;
+    transform: rotate(15deg);
+    border: 1px solid red;
+}

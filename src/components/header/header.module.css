@@ -1,0 +1,17 @@
+.header {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

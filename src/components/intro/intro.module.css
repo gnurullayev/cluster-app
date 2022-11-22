@@ -1,0 +1,39 @@
+.intro {
+    padding: 100px 0;
+} 
+
+.intro_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.intro_box {
+    display: flex;
+    margin-top: 40px;
+}
+
+.intro_list {
+    width: 100%;
+    max-width: 550px;
+}
+
+.intro_item {
+    position: relative;
+    padding-left: 35px;
+}
+
+.intro_item + .intro_item {
+    margin-top: 24px;
+}
+
+.intro_item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/check.svg");
+    content: "";
+}
