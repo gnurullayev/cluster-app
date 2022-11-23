@@ -1,12 +1,17 @@
-import React from 'react'
+import {useEffect} from 'react'
 import styles from "./intro.module.css"
 import line from "../../assets/line.svg"
+import AOS from 'aos'
 
 const Intro = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <section className={styles.intro}>
       <div className={styles.intro_inner}>
-        <div className={styles.intro_header}>
+        <div className={styles.intro_header} data-aos="fade-up">
           <h3 className={styles.intro_title}>Предприятия, работающие в ООО “TCT CLUSTER”</h3>
 
           <span className={styles.line}>
@@ -14,7 +19,7 @@ const Intro = () => {
           </span>
         </div>
 
-        <div className={styles.intro_box}>
+        <div className={styles.intro_box} data-aos="fade-up">
           <ul className={styles.intro_list}>
             <li className={styles.intro_item}>OOO “TCT AGRO CLUSTER”</li>
             <li className={styles.intro_item}>OOO “TCT FISH CLUSTER”</li>

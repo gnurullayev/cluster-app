@@ -1,18 +1,19 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import styles from "./hero.module.css"
 import player from "../../assets/player.svg"
 import { imgData } from '../../data/heroDataImg'
+import AOS from 'aos'
 
 
 const Hero = () => {
   const [active, setActive] = useState<boolean>(false)
-
-  console.log(active);
-  
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <div className={styles.hero}>
-      <div className={styles.hero_inner}>
+      <div className={styles.hero_inner} data-aos="fade-up">
         <h1 className={styles.title}>TCT CLUSTER</h1>
         <div className={styles.hero_start}>
           <h2 className={styles.hero_title}>O Компании </h2>

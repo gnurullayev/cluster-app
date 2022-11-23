@@ -7,22 +7,23 @@ export interface IProps {
   color:string
 }
 
+
 const CircleProgress = ({count,color,classNames}:IProps) => {
   const [number, setNumber] = useState<number>(0)
 
   useEffect(() => {
-      let interval = setInterval(() => {
-          setNumber(prev => prev + 1)
-      },10)
+    let interval = setInterval(() => {
+      setNumber(prev => prev + 1)
+    },10)
 
-      if(number === count) {
-          clearInterval(interval)
-      }
+    if(number === count) {
+      clearInterval(interval)
+    }
 
-      return () => {
-          clearInterval(interval)
-      }
-  }, [number])
+    return () => {
+      clearInterval(interval)
+    }
+  }, [number,count])
 
   return (
     <div 

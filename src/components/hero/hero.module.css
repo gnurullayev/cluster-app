@@ -98,40 +98,49 @@
     grid-template-rows: 45px 45px 45px 38px 7px 10px 35px 45px 23px 16px 51px 45px 45px;
     z-index: 10;
 }
+  
 
 .hero_item:first-child {
     grid-column: 7 / span 2;
     grid-row: 1 / span 2;
+    animation: scaleAnimate1 2s linear 2s infinite alternate;
 }
 
 .hero_item:nth-child(2) {
     grid-column: 4 / span 2;
     grid-row: 2 / span 2;
+    animation: scaleAnimate1 2s linear 4s infinite alternate;
 }
 
 .hero_item:nth-child(3) {
     grid-column: 2 / span 2;
     grid-row: 6 / span 2;
+    animation: scaleAnimate1 2s linear 6s infinite alternate;
 }
 
 .hero_item:nth-child(4) {
     grid-column: 3 / span 2;
     grid-row: 10 / span 4;
+    animation: scaleAnimate1 2s linear 8s infinite alternate;
 }
 
 .hero_item:nth-child(5) {
     grid-column: 7 / span 2;
     grid-row: 11 / span 4;
+    animation: scaleAnimate1 2s linear 10s infinite alternate;
 }
 
 .hero_item:nth-child(6) {
     grid-column: 10 / span 2;
     grid-row: 7 / span 2;
+    animation: scaleAnimate1 2s linear 12s infinite alternate;
 }
 
 .hero_item:nth-child(7) {
+    position: relative;
     grid-column: 6 / span 3;
     grid-row: 5 / span 4;
+    animation: scaleAnimate1 2s linear 14s infinite alternate;
 }
 
 .hero_watch {
@@ -156,4 +165,11 @@
 
 .active {
     visibility: visible;
+}
+
+
+@keyframes scaleAnimate1 {
+    0%   {scale: 1; }
+    50%  {scale: 1.09;}
+    100%  {scale: 1.13;}
 }

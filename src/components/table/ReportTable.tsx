@@ -6,7 +6,6 @@ interface Iprops {
 }
 
 const ReportTable = ({data}:Iprops) => {
-    console.log(data);
     
     return (
         <table className={styles.table}>
@@ -42,7 +41,7 @@ const ReportTable = ({data}:Iprops) => {
             <tbody>
                 {
                     data.map((el,i) => (
-                        <tr className={`${styles.row} `} style={{"backgroundColor": (i + 1) % 2 === 0 ? "#F6F6F6" : "#fff"}}>
+                        <tr key={el.id} className={`${styles.row} `} style={{"backgroundColor": (i + 1) % 2 === 0 ? "#F6F6F6" : "#fff"}}>
                             <td>{i + 1}</td>
 
                             <td>{el.name}</td>

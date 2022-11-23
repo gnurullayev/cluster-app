@@ -1,0 +1,35 @@
+.footer {
+    min-height: 80px;
+    padding: 17px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_item {
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.8;
+}
+
+.networks_list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.networks_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}

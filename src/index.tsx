@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/layout/Layout';
 
+import 'aos/dist/aos.css';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import styles from "./companyDepartments.module.css"
 import line from "../../assets/line.svg"
 
@@ -16,16 +16,21 @@ import item3img3 from "../../assets/item3-img3.png"
 import item4img1 from "../../assets//item4-img1.png"
 import item4img2 from "../../assets/item4-img2.png"
 import item4img3 from "../../assets/item4-img3.png"
+import AOS from 'aos'
 
 
 
 const ComponyDepartments = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <section className={styles.departments}>
       <ul className={styles.departments_list}>
-        <li className={styles.departments_item}>
+        <li className={styles.departments_item} data-aos="fade-up">
           <div className={styles.departments_item_start}>
-            <div className={styles.total_aria_header}>
+            <div className={styles.total_aria_header} >
               <h3 className={styles.total_aria_title}>
                 Сельское хозяйство
               </h3>
@@ -42,7 +47,7 @@ const ComponyDepartments = () => {
 
           <ul className={styles.departments_item_end}>
               <li className={styles.item_img}>
-                <img className={styles.img} src={item1img1} alt="" />
+                <img className={styles.img} src={ item1img1 } alt="" />
               </li>
 
               <li className={styles.item_img}>
@@ -55,7 +60,7 @@ const ComponyDepartments = () => {
           </ul>
         </li>
 
-        <li className={styles.departments_item}>
+        <li className={styles.departments_item} data-aos="fade-up">
           <div className={styles.departments_item_start}>
             <div className={styles.total_aria_header}>
               <h3 className={styles.total_aria_title}>
@@ -86,7 +91,7 @@ const ComponyDepartments = () => {
           </ul>
         </li>
 
-        <li className={styles.departments_item}>
+        <li className={styles.departments_item} data-aos="fade-up">
           <div className={styles.departments_item_start}>
             <div className={styles.total_aria_header}>
               <h3 className={styles.total_aria_title}>
@@ -121,7 +126,7 @@ const ComponyDepartments = () => {
           </ul>
         </li>
 
-        <li className={styles.departments_item}>
+        <li className={styles.departments_item} data-aos="fade-up">
           <div className={styles.departments_item_start}>
             <div className={styles.total_aria_header}>
               <h3 className={styles.total_aria_title}>
