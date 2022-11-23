@@ -1,11 +1,9 @@
 
-
 interface IProgresBarData {
     classNames: string;
     color: string;
     count:number;
 }
-
 
 export const progresBarData:IProgresBarData[] = [
     {
