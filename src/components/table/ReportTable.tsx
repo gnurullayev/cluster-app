@@ -47,39 +47,39 @@ const ReportTable = ({data}:Iprops) => {
                             <td>{el.name}</td>
 
                             <td>
-                                {el.hectare ? <p>{el.hectare}</p> : ""} 
-                                {el.sent ? <p>{el.sent}</p> : ""} 
-                                {el.tonna ? <p>{el.tonna}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.hectare}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.sent}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.tonna}</span> : ""} 
                             </td>
                             
                             <td>
-                                {el.hectare ? <p>{el.years[0].count1}</p> : ""} 
-                                {el.sent ? <p>{el.years[0].count2}</p> : ""} 
-                                {el.tonna ? <p>{el.years[0].count3}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.years[0].count1}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.years[0].count2}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.years[0].count3}</span> : ""} 
                             </td>
 
                             <td>
-                                {el.hectare ? <p>{el.years[1].count1}</p> : ""} 
-                                {el.sent ? <p>{el.years[1].count2}</p> : ""} 
-                                {el.tonna ? <p>{el.years[1].count3}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.years[1].count1}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.years[1].count2}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.years[1].count3}</span> : ""} 
                             </td>
 
                             <td>
-                                {el.hectare ? <p>{el.years[2].count1}</p> : ""} 
-                                {el.sent ? <p>{el.years[2].count2}</p> : ""} 
-                                {el.tonna ? <p>{el.years[2].count3}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.years[2].count1}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.years[2].count2}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.years[2].count3}</span> : ""} 
                             </td>
 
                             <td>
-                                {el.hectare ? <p>{el.years[3].count1}</p> : ""} 
-                                {el.sent ? <p>{el.years[3].count2}</p> : ""} 
-                                {el.tonna ? <p>{el.years[3].count3}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.years[3].count1}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.years[3].count2}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.years[3].count3}</span> : ""} 
                             </td>
                             
                             <td>
-                                {el.hectare ? <p>{el.years[4].count1}</p> : ""} 
-                                {el.sent ? <p>{el.years[4].count2}</p> : ""} 
-                                {el.tonna ? <p>{el.years[4].count3}</p> : ""} 
+                                {el.hectare ? <span className={styles.table_span}>{el.years[4].count1}</span> : ""} 
+                                {el.sent ? <span className={styles.table_span}>{el.years[4].count2}</span> : ""} 
+                                {el.tonna ? <span className={styles.table_span}>{el.years[4].count3}</span> : ""} 
                             </td>
                         </tr>
                     ))

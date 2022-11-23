@@ -64,3 +64,7 @@ td {
     background-color: #e7e7e7 !important;
 }
 
+.table_span {
+    display: block;
+}
+
